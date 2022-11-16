@@ -19,7 +19,7 @@ pipeline {
      }
     }
 
-    stage('Deliver') {
+    stage('Deliveeer') {
       steps{
         deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://18.233.163.71:9090/')], contextPath: null, war: 'target/calculator.war'
      }
